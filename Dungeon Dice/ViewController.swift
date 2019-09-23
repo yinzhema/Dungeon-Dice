@@ -22,36 +22,9 @@ class ViewController: UIViewController {
         diceNumberLabel.text=String(number)
     }
     
-    @IBAction func fourSidePressed(_ sender: UIButton) {
-        giveNumber(sideNumber: 4)
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        giveNumber(sideNumber: sender.tag)
     }
-    
-    @IBAction func sixSidePressed(_ sender: UIButton) {
-        giveNumber(sideNumber: 6)
-    }
-    
-    
-    @IBAction func eightSidePressed(_ sender: UIButton) {
-        giveNumber(sideNumber: 8)
-    }
-    
-    @IBAction func tenSidePressed(_ sender: UIButton) {
-        giveNumber(sideNumber: 10)
-    }
-    
-    @IBAction func twelveSidePressed(_ sender: UIButton) {
-       giveNumber(sideNumber: 12)
-    }
-    
-    @IBAction func twentySidePressed(_ sender: UIButton) {
-       giveNumber(sideNumber: 20)
-    }
-    
-    @IBAction func hundredSidePressed(_ sender: UIButton) {
-        giveNumber(sideNumber: 100)
-    }
-    
-    
 
 }
 
